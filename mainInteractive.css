@@ -9,7 +9,7 @@ a:hover {
     color: rgb(238, 74, 159);
 }
 body {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("background-image.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("background-interactive.jpg");
     font-family: 'Raleway', sans-serif;
     color: white;
 }
