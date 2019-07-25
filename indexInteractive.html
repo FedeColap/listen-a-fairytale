@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fairy tales for children</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="anchorTop"></div>
+    <nav> 
+        <ul class="navUl">
+            <button id="bHear"><li class="mainLI">Hear</li></button>
+            <button id="bList"><li class="mainLI">List</li></button>
+        </ul>
+    </nav>
+    <main>
+        <section class="opening">
+            <h2 class="openingH">Welcome to the world of fairy tales!</h2>
+            <p>This app has been created with love to help you discover and listen to the Grimm Brothers' stories.<br>
+            In the <span class="enfasi">HEAR</span> section, the Fairy of Internet will choose a random story for you :-) <br>
+            while the <span class="enfasi">LIST</span> section will give you a selection of the available audiotales</p>
+            <h3 class="openingH">May you be inspired and enjoy the dive in this magical world!</h3>
+        </section>
+
+        <section class="hear displayLater-H">
+                <h1>Listen!</h1>
+                <form id="js-form-H">
+                    <label for="search-term-H">Click on the button to see your fairy tale</label>
+                    <input id="search-term-H" type="submit" value="Go!" class="input">
+                </form>
+                <p id="js-error-message-H" class="error-message-H"></p>
+
+                <section id="results-H" class="hidden">
+                    <h2>It's time to hear a nice story</h2>
+                    <p>Click on the Title to start listening (another window will be opened for you).</p>
+                    <ul id="results-list-H">
+                    </ul>
+                    <p>Would you like to listen another fairy tale? Click again on the button, and we will load another one.</p>
+                </section>
+        </section>
+
+        <section class="list displayLater-L">
+                <h1>List</h1>
+                <form id="js-form-L">
+                    <label for="search-term-L">See the list of Grimms' tales</label>
+                    <input id="search-term-L" type="submit" value="See!" class="input">
+                </form>
+                <p id="js-error-message-L" class="error-message-L"></p>
+
+                <section id="results-L" class="hidden">
+                    <h2>These are the Grimm Brothers' fairy tales we have currently available</h2>
+                    <p>Click on a Title to start listening (another window will be opened for you).</p>
+                    <ul id="results-list-L">
+                    </ul>
+                    <a href="#anchorTop"><button id="up">Go back on top</button></a>
+                </section>
+        </section>
+    </main>
+    <script src="indexVoxRandom.js"></script>
+    <script src="indexVox.js"></script>
+</body>
+</html>
